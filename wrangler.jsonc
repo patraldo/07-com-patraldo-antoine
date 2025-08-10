@@ -13,7 +13,42 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+		
+	},
+  // Non-sensitive variables
+  "vars": {
+    "MAILGUN_DOMAIN": "antoine.patraldo.com"
+  },
+
+  // D1 Database Binding
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "artist-portfolio-db",
+      "database_id": "272fd768-701a-48cc-b223-f5183e00b87d"
+    }
+  ],
+
+  // Environments: development, preview, production
+  "env": {
+    "development": {
+      "vars": {
+        "WORKER_DOMAIN": "localhost:8787"
+      ]
+    },
+    "preview": {
+      "vars": {
+        "WORKER_DOMAIN": "preview.mayachen.art"
+      }
+    },
+    "production": {
+      "secrets": [
+        "MAILGUN_API_KEY"
+      ]
+    }
+  }
+}
+
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

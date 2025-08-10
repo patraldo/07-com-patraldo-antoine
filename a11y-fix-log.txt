@@ -1,0 +1,16 @@
+Accessibility Fix Log
+Generated: Sun Aug 10 04:26:57 PM CST 2025
+========================================
+Processing src/lib/components/ArtPiece.svelte
+  🔁 Backed up: src/lib/components/ArtPiece.svelte.backup.1754864817
+  ✅ Added keyboard handler functions
+  ✅ Added on:keydown to clickable div
+  📄 Modified: src/lib/components/ArtPiece.svelte
+  ✅ Added on:keydown to overlay
+  ✅ Ignored static interaction on fullsize-content
+----------------------------------------
+  ✅ Ignored media captions warning
+
+✅ SUMMARY
+Total changes made: 5
+All fixes applied successfully.
