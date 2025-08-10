@@ -3,7 +3,7 @@
 </script>
 <div class="app">
   <nav>
-    <h1>MAYA CHEN</h1>
+    <h1>Antoine Patraldo</h1>
     <div class="nav-links">
       <a href="#work">Work</a>
       <a href="#about">About</a>
