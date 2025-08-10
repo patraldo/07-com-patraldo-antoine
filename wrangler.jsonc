@@ -14,38 +14,54 @@
   "observability": {
     "enabled": true
   },
-  // Non-sensitive variables
-  "vars": {
-    "MAILGUN_DOMAIN": "antoine.patraldo.com",
-    "WORKER_DOMAIN": "subscribe.antoine.patraldo.com"
-  },
-  // D1 Database Binding
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "artist-portfolio-db",
-      "database_id": "090e618d-c684-4a7c-ba44-18f440d36e96"
-    }
-  ],
-  // Environments: development, preview, production
+
+  // Remove vars and d1_databases from here (top level)
+
   "env": {
     "development": {
       "vars": {
+        "MAILGUN_DOMAIN": "antoine.patraldo.com",
         "WORKER_DOMAIN": "localhost:8787"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "artist-portfolio-db",
+          "database_id": "272fd768-701a-48cc-b223-f5183e00b87d"
+        }
+      ]
     },
     "preview": {
       "vars": {
+        "MAILGUN_DOMAIN": "antoine.patraldo.com",
         "WORKER_DOMAIN": "subscribe-preview.antoine.patraldo.com"
-      }
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "artist-portfolio-db",
+          "database_id": "272fd768-701a-48cc-b223-f5183e00b87d"
+        }
+      ]
     },
     "production": {
+      "vars": {
+        "MAILGUN_DOMAIN": "antoine.patraldo.com",
+        "WORKER_DOMAIN": "subscribe.antoine.patraldo.com"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "artist-portfolio-db",
+          "database_id": "090e618d-c684-4a7c-ba44-18f440d36e96"
+        }
+      ],
       "secrets": [
         "MAILGUN_API_KEY"
       ]
     }
   }
-
+}
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
