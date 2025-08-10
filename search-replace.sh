@@ -4,7 +4,7 @@
 # Safely rename artist across project with full log
 # Fixed to properly find files like +layout.svelte
 
-OLD_NAME="Maya Chen"
+OLD_NAME="MAYA CHEN"
 NEW_NAME="Antoine Patraldo"
 
 LOG_FILE="rename-artist-log.txt"
