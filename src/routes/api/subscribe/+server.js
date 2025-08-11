@@ -14,7 +14,7 @@ export async function POST({ request }) {
       );
     }
     // Send to Cloudflare Worker
-    const workerResponse = await fetch('https://subscribe.antoine.patraldo.com/subscribe', {
+    const workerResponse = await fetch('https://antoine.patraldo.com/subscribe', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
